@@ -1,0 +1,19 @@
+//
+//  Common.xcconfig
+//  test_xcconfig
+//
+//  Created by 黄亚栋 on 2019/7/9.
+//  Copyright © 2019 LEGOKit. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+//APP_DISPLAY_NAME
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited)
+
+GCC_PREPROCESSOR_DEFINITIONS[config=Debug] = $(inherited) "DEBUG=1"
+
+GCC_PREPROCESSOR_DEFINITIONS[config=Release] = $(inherited) "RELEASE=1"
+
+GCC_PREPROCESSOR_DEFINITIONS[config=Distribute] = $(inherited) "DISTRIBUTE=1"
